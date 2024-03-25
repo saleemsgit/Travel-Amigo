@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.main_itinerary {
+  display: flexbox;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* background-color: #e2f5f3; */
+  /* height: 85vh; */
+  overflow-y: auto;
+  /* border-radius: 1rem; */
+  margin-top: 9.6rem;
+}
+
+.banner-container {
+  background-image: url("./images/banner.jpg");
+  background-blend-mode: overlay;
+  background-color: hsla(0, 0%, 0%, 0.2);
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  display: flex;
+  position: relative;
+  width: 500px;
+  width: 100%;
+  height: 24rem;
+  /* height: 200px; */
+  /* height: 5; */
+  /* border-radius: 5px; */
+  margin: auto;
+  /* margin-top: 3vh; */
+  margin-bottom: 9.6rem;
+  /* background-color: rgb(229, 206, 206); */
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.transparent-box {
+  display: flex;
+  position: absolute;
+  /* left: 50%; */
+  /* top: calc(40% + 50px); */
+  /* transform: translateX(-50%); */
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.transparent-box p {
+  margin: 0;
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.date-info {
+  position: absolute;
+  /* top: 50%; */
+  bottom: 0;
+  font-size: 1.6rem;
+  /* font-family: "Poppins", sans-serif; */
+  /* right: 10px; */
+  /* top: 75px; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.date-svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.date-info p {
+  font-size: smaller;
+  margin-left: 5px;
+}
+
+.All-Dates {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 400px;
+}
+
+.Full-Plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.Full-Plan > div {
+  display: flex;
+  align-items: center;
+}
+
+.Full-Plan > div > h1 {
+  margin-right: 80px;
+  color: #254e72;
+}
+
+.dropDown {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.dropDown p {
+  margin: 0;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.dropDown svg {
+  width: 20px;
+  height: 20px;
+}
+
+.day {
+  font-weight: bold;
+  font-size: 20px;
+  color: #254e72;
+}
+
+.items {
+  margin: 20px 0px;
+  color: #254e72;
+  font-size: 13px;
+}
+
+.items > div {
+  margin-bottom: 8px;
+}
+
+.items > div > span {
+  font-weight: bold;
+}
+
+.sub-items {
+  margin-left: 20px;
+}
+
+.sub-items > div {
+  margin-bottom: 2px;
+}
+
+.btn {
+  background-color: #319396;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.icon {
+  left: 9px !important;
+  top: 12px !important;
+  height: 20px !important;
+  width: 20px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.vertical-timeline::before {
+  width: 2px !important;
+}
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all cubic-bezier(0, 1, 0, 1);
+}
+.content.show {
+  height: auto;
+  max-height: 9999;
+  transition: all cubic-bezier(0, 1, 0, 1);
+}
